@@ -13,10 +13,10 @@ public class RomanNumeralCalculator {
 			Optional<String> subset = Optional.ofNullable(mappedValues.get(value));
 			
 			if (subset.isPresent()) {
-				romanNumeral += subset.get();
+				romanNumeral = subset.get() + romanNumeral;
 				value = 0;
 			} else {
-				romanNumeral += "I";
+				romanNumeral = "I" + romanNumeral;
 				value -= 1;
 			}
 		}

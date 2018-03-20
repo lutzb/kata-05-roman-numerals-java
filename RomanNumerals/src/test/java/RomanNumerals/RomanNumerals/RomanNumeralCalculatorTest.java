@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class RomanNumeralCalculatorTest {
 	
-
 	RomanNumeralCalculator romanNumeral;
 	
 	@Before
@@ -38,5 +37,20 @@ public class RomanNumeralCalculatorTest {
 	@Test
     public void whenRomanNumeralCalculatorIsGiven5ItReturnsV() {
         assertEquals("V", romanNumeral.getRomanNumeral(5));
+    }
+	
+	@Test
+    public void whenRomanNumeralCalculatorIsGiven6ItReturnsVI() {
+        assertEquals("VI", romanNumeral.getRomanNumeral(6));
+    }
+	
+	@Test
+    public void whenRomanNumeralCalculatorIsGiven7ItReturnsVII() {
+        assertEquals("VII", romanNumeral.getRomanNumeral(7));
+    }
+	
+	@Test
+    public void whenRomanNumeralCalculatorIsGiven8ItReturnsVIII() {
+        assertEquals("VIII", romanNumeral.getRomanNumeral(8));
     }
 }
