@@ -19,4 +19,11 @@ public class RomanNumeralCalculatorTest {
     	
         assertEquals("II", romanNumeral.getRomanNumeral(2));
     }
+	
+	@Test
+    public void whenRomanNumeralCalculatorIsGiven4ItReturnsIV() {
+    	RomanNumeralCalculator romanNumeral = new RomanNumeralCalculator();
+    	
+        assertEquals("IV", romanNumeral.getRomanNumeral(4));
+    }
 }
